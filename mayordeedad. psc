@@ -1,0 +1,16 @@
+Algoritmo mayordeedad
+	Definir nombre Como Caracter 
+	Definir edad Como Entero
+	
+	Escribir "¿Cual es tu nombre?"
+	Leer nombre
+	Escribir  "¿Cual es tu edad?" 
+	Leer edad
+	
+	Si edad >= 18 Entonces
+		Escribir nombre "eres apto para la INE"
+	SiNo
+		Escribir nombre "no eres apto para la INE"
+		
+	FinSi
+FinAlgoritmo

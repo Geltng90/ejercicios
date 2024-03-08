@@ -1,0 +1,20 @@
+Algoritmo mayorque
+	Definir numero, numeroDos Como Entero
+	Escribir "Digite un numero:"
+	Leer numero
+	
+	Escribir  "Digite un segundo numero"
+	Leer numeroDos 
+	
+	Si numero = numeroDos Entonces
+		Escribir "Los numeros ingresados son iguales"
+	SiNo
+		Si numero > numeroDos Entonces
+			Escribir "El numero", numero " es mayor que ", numeroDos
+		SiNo
+			Escribir "El numero", numero " es menor que ", numeroDos
+			
+		FinSi
+	FinSi
+	
+FinAlgoritmo

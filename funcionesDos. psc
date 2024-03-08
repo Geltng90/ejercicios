@@ -1,0 +1,14 @@
+Funcion areaCuadrado <- calcularAreaCuadrado (lado)
+	areaCuadrado <- (lado * lado) 
+FinFuncion
+
+Algoritmo funcionesDos
+	Definir lado Como Real
+	
+	Escribir "Ingresa la medida de un lado de tu cuadrado:" 
+	Leer lado
+	
+	areaCuadrado <- calcularAreaCuadrado(lado)
+	Escribir "El area del cuadrado es: ", areaCuadrado
+	
+FinAlgoritmo

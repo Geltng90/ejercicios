@@ -1,0 +1,23 @@
+Funcion area <- calcularAreaTriangulo ( base, altura )
+	area <- (base * altura) / 2
+FinFuncion
+
+Funcion areaCirculo <- calcularAreaCirculo (radio) 
+	areaCirculo <- (3.1416 * radio) * 2
+FinFuncion
+
+Funcion areaCuadrado <- calcularAreaCuadrado (lado)
+	areaCuadrado <- (lado * lado)
+FinFuncion
+
+Algoritmo funciones
+	area <- calcularAreaTriangulo(5,8)
+	Escribir "El area del triangulo es: ", area
+	
+	areaCirculo <- calcularAreaCirculo (10)
+	Escribir "El area del circulo es: ", areaCirculo
+	
+	areaCuadrado <- calcularAreaCuadrado (2)
+	Escribir "El area del cuadrado es: ", areaCuadrado
+	
+FinAlgoritmo

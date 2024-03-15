@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+        <button class="btnDispAlert" onclick="saludo()">Disparar alerta</button>
+    <! -- Salto de linea -->
+    <br>
+    <label for="datoUno">Ingresa numero 1</label>
+    <input type="text" name="numeróUno" id="numeróUno" />
+    <br />
+    <label for="datoDos">Ingresa numero 2</label>
+    <input type="text" name="numeroDos" id="numeroDos" />
+    <br />
+    <button> onclick="leerNumero()">Leer numeros </button>
+    <br>
+    <button> onclick="sumar()">sumar</button>
+</br>
+     <button> onclick="restar()"</button>
+</br>
+<button> onclick="multiplicar()"</button>
+</br>
+<button> onclick="dividir"()</button>
+    <h1> Resultado de la operacion</h1>
+    <h2> id="Resultado"></h2>
+<script> src="./main.js" ></script>
+<body>
+</html>
+
+    

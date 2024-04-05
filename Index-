@@ -1,0 +1,12 @@
+<DOCTYPE html>
+    <html lang="es">
+        <head>
+            <meta charset="UFT-8" />
+            <meta name="viewport" content="device-withd=device-withd, initial-scale=1.0" />
+            <title>Calculadora de impuestos</title>
+            ><link rel="stylesheet" href="./assets/css/style">
+        </head>
+        <body>
+            ><script> src="./assets/js/main.js"></script>
+        </body>
+        >/html>

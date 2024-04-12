@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurante XYZ - Hacer Pedido</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/styless.css">
+  </head>
+  <body>
+    <header>
+      <h1>Restaurante "Sabor Guerrero" - Hacer Pedido</h1>
+    </header>
+    <div class="container">
+      <div>
+        <h2>Menú</h2>
+        <div class="menu-item">
+          <span>Pizza Margarita - $120</span>
+          <button onclick="addToCart('Escamole', 120)">Agregar</button>
+        </div>
+        <div class="menu-item">
+          <span>Hamburguesa con queso - $100</span>
+          <button onclick="addToCart('Pozole', 100)">
+            Agregar
+          </button>
+        </div>
+        <div class="menu-item">
+          <span>Ensalada César - $80</span>
+          <button onclick="addToCart('Enchiladas', 80)">Agregar</button>
+        </div>
+      </div>
+      <div class="cart">
+        <h3>Carrito de Compras</h3>
+        <ul id="cart-items"></ul>
+        <strong>Total: $<span id="total">0</span></strong>
+      </div>
+      <div class="order-details" id="order-details" style="display: none">
+        <!-- Sección de detalles de pedido -->
+        <h3>Detalles del Pedido</h3>
+        <p id="order-name"></p>
+        <p id="order-address"></p>
+        <ul id="order-summary"></ul>
+        <strong>Total: $<span id="order-total"></span></strong>
+      </div>
+      <div class="form-container">
+        <h2>Información de Pedido</h2>
+        <input
+          type="text"
+          id="customer-name"
+          placeholder="Nombre Completo"
+          required
+        />
+        <input
+          type="text"
+          id="customer-address"
+          placeholder="Dirección"
+          required
+        />
+        <button onclick="submitOrder()">Enviar Pedido</button>
+      </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

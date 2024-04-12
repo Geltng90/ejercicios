@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Impuesto de Hotel "Las Brisas"</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- Aquí inicia la barra de navegación -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary myNavbarColor">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Impuesto de Hotel</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Enlaces</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Menu desplegable
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Acción</a></li>
+                <li><a class="dropdown-item" href="#">Otra acción</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Algo más aquí</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Desactivado</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Buscar"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Buscar
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Aquí termina la barra de navegación -->
+
+    <!-- Hero starts here -->
+    <div class="px-4 py-5 my-5 text-center">
+      <img
+        class="d-block mx-auto mb-4"
+        src="./assets/img/salary-img.jpeg"
+        alt=""
+        width="300"
+        height="230"
+      />
+      <h1 class="display-5 fw-bold text-body-emphasis">
+        Impuesto de Hotel 
+      </h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">
+          Bienvenido al sistema de calculadora de impuestos del hotel "Las Brisas". Aquí podrás
+          determinar los impuestos a pagar al año de acuerdo a las ganacias anuales.
+        </p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <button type="button" class="btn btn-primary btn-lg px-4 gap-3">
+            Calcular impuestos
+          </button>
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4">
+            Contáctanos
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Hero ends here -->
+
+    <!-- My App - Taxes Calculator - Starts -->
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+      <input
+        type="text"
+        class="form-control"
+        id="nameInput"
+        placeholder="Jhnon Doe"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label"
+        >Example textarea</label
+      >
+      <textarea
+        class="form-control"
+        id="exampleFormControlTextarea1"
+        rows="3"
+      ></textarea>
+    </div>
+    <!-- My App - Taxes Calculator - Ends -->
+
+    <!-- Footer starts here -->
+    <footer
+      class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+    >
+      <p class="col-md-4 mb-0 text-body-secondary">© 2024 UNID - Sistemas</p>
+
+      <a
+        href="/"
+        class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+      >
+        <svg class="bi me-2" width="40" height="32">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
+      </a>
+
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-body-secondary">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-body-secondary"
+            >Características</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-body-secondary">Precio</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link px-2 text-body-secondary">Acerca de</a>
+        </li>
+      </ul>
+    </footer>
+    <!-- Footer ends here -->
+
+    <script src="./assets/js/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CINEPOLIS</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">CINEPOLIS</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cartelera.html">Cartelera</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Carousel -->
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="data:image/png;base64,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"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="data:image/png;base64,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"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="data:image/png;base64,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"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Carousel -->
+
+    <!-- Form -->
+    <form id="ageForm">
+      <div class="mb-3">
+        <label for="ageInput" class="form-label">Edad</label>
+        <input type="number" class="form-control" id="ageInput" required />
+      </div>
+      <button type="submit" class="btn btn-primary">Aplicar Descuento</button>
+    </form>
+    <!-- Form -->
+
+    <script src="./main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
